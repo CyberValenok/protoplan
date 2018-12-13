@@ -6,7 +6,8 @@
   </head>
   <body>
     <h1>Hi, Boss! If you want to sign up:</h1>
-  <form method="post" action="/registration">
+  <form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
     <table>
       <tr>
         <td>Login</td>
@@ -14,14 +15,15 @@
         <td>Password</td>
       </tr>
       <tr>
-        <td><input type="text" name="Login"></td>
-        <td><input type="text" name="Email"></td>
-        <td><input type="text" name="Password"></td>
+        <td>{{form.username(size=32)}}</td>
+        <td>{{form.email(size=50)}}</td>
+        <td>{{form.password(size=50)}}</td>
       </tr>
       <tr>
-        <td><button type="submit">Accept</button></td>
+        <td>{{form.submit()}}</td>
       </tr>
     </table>
     <a href="{{ url_for('index_1')}}">About user</a>
+  </form>
   </body>
 </html>
