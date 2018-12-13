@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Welcome, Boss!</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>User manager: <a href="{{ url_for('index_1')}}">About User</a>
+      <a href="{{ url_for('hello')}}">Main page</a>
+    </div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>

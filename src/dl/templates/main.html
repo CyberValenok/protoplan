@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ title }}</title>
-  </head>
-  <body>
+{% extends "template.html" %}
+{% block content%}
     <h2>Tupa,{{user.username}} krasava!</h2>
-    <a href="{{ url_for('hello')}}">Main page</a>
-  </body>
-</html>
+{% endblock %}
