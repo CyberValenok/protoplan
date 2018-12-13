@@ -1,4 +1,0 @@
-import os
-
-
-    SQLACLCHEMY_DATABASE_URI=

@@ -1,10 +1,8 @@
 from flask import Flask
-#from config import Configuration
+from config import Config
 
 
 app = Flask(__name__)
-#app.config.from_object(Configuration)
+app.config.from_object(Config)
 #from module import models
-class Configuration(object):
-    DEBUG=True
 from dl import views

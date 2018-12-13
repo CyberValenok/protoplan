@@ -6,11 +6,22 @@
   </head>
   <body>
     <h1>Hi, Boss! If you want to sign up:</h1>
-    <form method="post" action="/registration">
-      <input type="text" name="Login">
-      <input type="text" name="Email">
-      <input type="text" name="Password">
-      <button type="submit">Accept</button>
+  <form method="post" action="/registration">
+    <table>
+      <tr>
+        <td>Login</td>
+        <td>Email</td>
+        <td>Password</td>
+      </tr>
+      <tr>
+        <td><input type="text" name="Login"></td>
+        <td><input type="text" name="Email"></td>
+        <td><input type="text" name="Password"></td>
+      </tr>
+      <tr>
+        <td><button type="submit">Accept</button></td>
+      </tr>
+    </table>
     <a href="{{ url_for('index_1')}}">About user</a>
   </body>
 </html>
