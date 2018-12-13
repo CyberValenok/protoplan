@@ -9,8 +9,9 @@
     {% endif %}
   </head>
   <body>
-    <div>User manager: <a href="{{ url_for('index_1')}}">About User</a>
-      <a href="{{ url_for('hello')}}">Main page</a>
+    <div>User manager: <a href="{{ url_for('hello')}}">Main page</a>
+      <a href="{{ url_for('index_1')}}">About User</a>
+
     </div>
     <hr>
     {% block content %}{% endblock %}

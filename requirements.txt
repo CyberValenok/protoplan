@@ -3,3 +3,4 @@ Flask
 Flask-SQLAlchemy
 SQLAlchemy
 Flask-wtf
+Flask-migrate
