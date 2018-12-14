@@ -6,7 +6,7 @@ from flask_migrate import Migrate
 
 app = Flask(__name__)
 app.config.from_object(Config)
-db = SQLAlchemy(dl)
-migrate = Migrate(dl,db)
+db = SQLAlchemy(app)
+migrate = Migrate(app,db)
 #from module import models
 from dl import views
